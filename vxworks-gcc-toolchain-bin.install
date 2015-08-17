@@ -1,0 +1,6 @@
+post_remove() {
+	if [-f /usr/share/cmake-2.8/Modules/FRCDeploy.cmake]; then
+		echo "Removing FRCDeploy.cmake"
+		rm /usr/share/cmake-2.8/Modules/FRCDeploy.cmake
+	fi
+}
